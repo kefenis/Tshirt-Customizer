@@ -1,0 +1,210 @@
+* {
+  margin-top: 0%;
+  padding-top: 0%;
+}
+img {
+  max-width: 100%;
+}
+.mainContainer {
+  max-width: 980px;
+  margin: 0 auto;
+}
+/* form styling */
+.formvalid {
+  display: flex;
+  justify-content: space-between;
+}
+.form1 {
+  width: 34%;
+  /* max-width: 34%; */
+ }
+.form1n2 {
+  padding-top: 20px;
+}
+.form2 {
+  width: 35%;
+}
+.form53 {
+  width: 28%;
+  background-color: rgba(202, 242, 207, 255);
+}
+/* ends here */
+.tiltle-t {
+  background-color: #9eefe8;
+  text-align: center;
+  margin-bottom: 0%;
+}
+/* styling dropdown/combo box  */
+.input {
+  width: 100%;
+}
+
+/******* styling the text that display on z Tshirt ******/
+/* ******************************************* */
+/* displaying text on the tshirt
+.centered {
+    color: red;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  } */
+/* And also doing it is as follows */
+
+.thumbnail {
+  position: relative;
+  margin-bottom: 0;
+  border: 0;
+  border-color: transparent;
+}
+
+.dispText {
+  /* color: red; */
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 100%;
+}
+/* To display the font in a new line to prevent overflow*/
+.box {
+  inline-size: 100px;
+  overflow-wrap: break-word;
+}
+/* ********End********** */
+/*To display the values in the cart   */
+.totalResult {
+  display: none;
+}
+/* add to and remove from Cart styling */
+.ad-cart {
+  background-color: #116adf;
+}
+.rm-cart {
+  background-color: hsla(0, 84%, 52%, 0.774);
+}
+.carts1{
+  padding-left: 20px;
+}
+/*hide form  to display when remove button clicked*/
+#removeCart {
+  display: none;
+  padding-left: 20px;
+}
+/* ****End**** */
+
+/* coloring box button bg color */
+#black {
+  background-color: black;
+  border-radius: 25%;
+  width: 30px;
+  height: 20px;
+}
+#blue {
+  background-color: blue;
+  border-radius: 25%;
+  width: 30px;
+  height: 20px;
+}
+#green {
+  background-color: green;
+  border-radius: 25%;
+  width: 30px;
+  height: 20px;
+}
+#red {
+  background-color: red;
+  border-radius: 25%;
+  width: 30px;
+  height: 20px;
+  box-shadow: none;
+}
+/* *******End******** */
+
+/* Styling the slider control */
+#range {
+  -webkit-appearance: sliderthumb-vertical;
+  width: 100%;
+  font-weight: 700;
+  font-size: medium;
+  padding-top: 0;
+}
+.space-point {
+  /* font-size: xx-small; */
+  font-size: 4px;
+  font-weight: bold;
+  letter-spacing: 38px;  /* to create a space between letters */
+ /* letter-spacing: 0.95em; */
+  padding-left: 6px;
+  padding-bottom: 0;
+}
+/* for slider font size space */
+.fontSp{
+    font-size: xx-small;
+    font-weight: 600;
+    /* letter-spacing: 0.5em; */
+}
+
+input[type=range]{
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod;
+  margin-top: -4px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+input[type=range]::-ms-track {
+  width: 300px;
+  height: 5px;
+  
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+
+  /*remove default tick marks*/
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #ccc;
+}

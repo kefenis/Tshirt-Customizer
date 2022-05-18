@@ -1,0 +1,97 @@
+*{
+    margin-top: 0%;
+    /* background-color: antiquewhite; */
+}
+img{
+    max-width: 100%;
+}
+.mainContainer{
+   max-width: 980px; 
+   margin: 0 auto;
+}
+.tiltle-t{
+    background-color:#9eefe8;
+    /* rgba(158,239,232,255) */
+    text-align: center;
+    margin-bottom: 0%;
+}
+.formvalid{
+    display: flex;
+    justify-content: space-between;
+}
+.form1{
+    max-width: 32%;
+    /* background-color: aquamarine; */
+}
+/* #printchatbox {
+
+    background-image: url("../image/tish1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+  } */ 
+  .arial{
+      font-style: arial;
+  }
+  .Verdana{
+      font-style: Verdana;
+    
+
+  }
+  .vv{
+      padding-top: 20px;
+  }
+
+.form2{
+       max-width: 32%;
+
+}
+.form53{
+    max-width: 32%;
+    background-color:rgba(202,242,207,255);
+    
+}
+.printchatbox{
+    /* margin-bottom: -50px; */
+    padding-bottom: 10px;
+}
+.printchatbox{
+    z-index: inherit;
+    /* margin-top: 140px; */
+}
+.carts1 {
+    display: block;
+  }
+
+.ad-cart{
+    background-color:#116adf;
+}
+
+.rm-cart{
+    background-color: hsla(0, 84%, 52%, 0.774);
+}
+  /* on other way of doing it is as follows */
+
+
+  .thumbnail {
+    position: relative;
+    margin-bottom: 0;
+    border: 0;
+    border-color: transparent;
+}
+
+/* .caption */
+
+ .dispText {
+    color: red;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    width: 100%;
+  } 
+  /* To display the font in a new line */
+   .box {
+    inline-size: 100px;
+    overflow-wrap: break-word;
+  }
+   

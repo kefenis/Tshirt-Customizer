@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Form Validations</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1 class="tiltle-t">T Shirt Customizer</h1>
+
+      <div class="formvalid">
+        <!-- this form for t shirt image -->
+
+        <div class="form1 form1n2">
+          <!-- *******Tshirt image and text display div****** -->
+          <div id="box-search">
+            <div class="thumbnail text-center">
+              <img src="image/tish1.jpg" alt="" />
+              <div class="dispText caption box" id="printchatbox"></div>
+              <p>price $20</p>
+            </div>
+          </div>
+        </div>
+        <!-- ********************************** -->
+
+        <div class="form2 form1n2">
+          <h2>Customize T-shirt</h2>
+          <form class="form3" id="registration-form" action="#" method="POST">
+            <label for="">Text to put on T-shirt:</label><br />
+            <input
+              type="text"
+              name="inputText"
+              class="chatinput form-control"
+              id="tshirt-preview"
+              placeholder="enter text"
+            /><br />
+            <p class="chTxtColor">max 20 characters</p>
+            <!-- to display an error message -->
+            <br />
+            Choose fonrt:
+            <br />
+            <!-- onchange="changeFontStyle (this);" -->
+            <select
+              id="input-font"
+              class="input"
+              onchange="changeFontStyle (this);"
+            >
+              <option value="Arial" selected="selected">Arial</option>
+              <option value="cursive">cursive</option>
+              <option value="fantasy">Fantasy</option>
+              <option class="Helverica" value="Helverica">Helverica</option>
+              <option value="monospace">Monospace</option>
+              <option value="sans-serif">sans-serif</option>
+              <option class="Tahoma" value="Tahoma">Tahoma</option>
+              <option value="Times New Roman">Times New Roman</option>
+              <option lass="Verdana" value="Verdana">Verdana</option>
+            </select>
+            <br /><br />
+            <!-- Scroll Selector -->
+            Choose font size:
+            <br />
+            <!-- <span style="margin: 0 50px"</span
+              > -->
+            <label class="space-point" for="">||||||||||</label>
+            <!-- or we we can use as follow -->
+            <!-- <label class="vl" for=""
+              >.&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;
+              &nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;
+              .&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;
+              .&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;.
+              &nbsp;&nbsp;&nbsp;&nbsp;.</label
+            > -->
+            <input
+              class="rgCol"
+              type="range"
+              id="range"
+              min="1"
+              max="9"
+              step="1"
+              value="0.1"
+            />
+            <br />
+            <!-- spacing and px to increase the size of the font -->
+            <label class="fontSp" for=""
+              >12px&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18px&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24px&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30px&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36px</label
+            >
+            <!-- end -->
+            <br /><br />
+            <!-- text color -->
+            Choose text Color:
+            <br /><br />
+            <input
+              id="black"
+              type="button"
+              value="   "
+              onclick="initbl()"
+              id="btn"
+            />
+            <input
+              id="blue"
+              type="button"
+              value="   "
+              onclick="init()"
+              id="btn"
+            />
+            <input
+              id="green"
+              type="button"
+              value="   "
+              onclick="init2()"
+              id="btn"
+            />
+            <input
+              id="red"
+              type="button"
+              value="   "
+              onclick="init1()"
+              id="btn"
+            />
+
+            <br /><br />
+            <!-- add to and remove from cart buttons -->
+            <input
+              class="ad-cart"
+              id="submitButton"
+              type="button"
+              value="Add to Cart"
+            />
+            <!-- <button id="submitButton" type="submit">Remove from cart</button> -->
+            <input
+              class="rm-cart"
+              id="rmCart"
+              type="button"
+              value="Remove from Cart"
+            />
+            <div class="dtx" id="errorsDip"></div>
+          </form>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="form53 shCart">
+          <h3>Shopping Cart</h3>
+
+          <div class="carts1" id=" removeCart">
+            <p>Cart is Empty</p>
+            <hr />
+            <!-- &nbsp; TO Add space in html -->
+            Subtotal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$0.00
+            <br />
+            Tax:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;$0.00
+            <br />
+            Total:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$0.00
+          </div>
+          <div class="rmcarts" id="removeCart">
+            <p>Cart is Empty</p>
+            <hr />
+            <!-- &nbsp; TO Add space in html -->
+            Subtotal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$0.00
+            <br />
+            Tax:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;$0.00
+            <br />
+            Total:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$0.00
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
